@@ -30,11 +30,10 @@ function renderMarkup(countries) {
     refs.countryList.innerHTML = '';
     return renderListMarkup(countries);
   }
-  if (countries.length === 1) {
-    refs.countryInfo.innerHTML = '';
-    refs.countryList.innerHTML = '';
-    return renderInfoMarkup(countries);
-  }
+
+  refs.countryInfo.innerHTML = '';
+  refs.countryList.innerHTML = '';
+  return renderInfoMarkup(countries);
 }
 
 function renderListMarkup(countries) {
